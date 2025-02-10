@@ -1,6 +1,6 @@
 (async function checkForUpdates() {
     const currentVersion = "1.0";
-    const versionUrl = "https://raw.githubusercontent.com/ivysone/Will-you-be-my-Valentine-/main/version.json"; 
+    const versionUrl = "https://raw.githubusercontent.com/thdaiuem/14-2/main/version.json"; 
 
     try {
         const response = await fetch(versionUrl);
@@ -37,7 +37,7 @@
                 }
             }
             if (entropy < 0.15) {
-                document.querySelector('.no-button')?.textContent = "Wait... what?";
+                document.querySelector('.no-button')?.textContent = "Từ từ đã";
                 document.querySelector('.yes-button')?.textContent = "Huh??";
             }
             if (entropy < 0.1) {
@@ -54,16 +54,16 @@
 })();
 */
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "Em chắc chưa",
+    "Thực sự chắc chưaaaa???",
+    "Oii nooo, em chắc rùi á?",
+    "Đừng màaaa...",
+    "Bây bê suy nghĩ lại đi",
+    "Em mà hong đi thì anh bùn lắm",
+    "Anh sẽ rất bùn",
+    "Anh sẽ rất rất rất bùn...",
+    "... anh sẽ hong hỏi nữa:<",
+    "Đùa hoiii:< đi chơi với anh nhaaa ❤️"
 ];
 
 let messageIndex = 0;
